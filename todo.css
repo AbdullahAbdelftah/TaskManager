@@ -1,0 +1,227 @@
+body{
+    text-align: center;
+    background-image: url(todo2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+h1{
+    margin: 90px;
+    font-family: Lobster;
+    font-size: 50px;
+    color: white;
+}
+#noth{
+    visibility: hidden;
+    font-size: larger;
+}
+.temp{
+    
+    margin-bottom: 15px;
+    border: 3px solid rgba(9, 9, 9, 0.333);
+    border-radius: 15px;
+    height: max-content;
+    width: 300px;
+    transition: 0.7s;
+}
+#todo{
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    height: max-content;
+    background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+}
+#doing{
+    background-color: #FFFF8F;
+    padding: 15px;
+    border-radius: 25px;
+    height: max-content;
+    min-width: 305px;
+    min-height: 150px;
+    
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px  #baba66,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px  #b9b979,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+}
+#done{
+    background-color: #93C572;
+    padding: 15px;
+    border-radius: 25px;
+    height: max-content;
+    min-width: 305px;
+    min-height: 150px;
+    
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #82ad65,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #688b50,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+}
+input{
+    border-radius: 15px;
+    padding: 15px;
+    font-size: larger;
+    
+}
+legend{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: Bebas Neue;
+
+}
+button{
+    margin: 20px;
+    padding: 10px;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.txt{
+    word-wrap: break-word;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: Encode Sans;
+}
+.start,.delete{
+    width: 35px;
+    
+}
+
+
+.btn-54,
+.btn-54 *,
+.btn-54 :after,
+.btn-54 :before,
+.btn-54:after,
+.btn-54:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-54 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  margin: 20px;
+}
+.btn-54:disabled {
+  cursor: default;
+}
+.btn-54:-moz-focusring {
+  outline: auto;
+}
+.btn-54 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-54 [hidden] {
+  display: none;
+}
+.btn-54 {
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  padding: 1.8rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+  background: none;
+}
+.btn-54 .content,
+.btn-54 .depth,
+.btn-54 .shadow {
+  transition: transform 0.2s;
+}
+.btn-54 .content {
+  background: greenyellow;
+  color: #000;
+  display: grid;
+  height: 84%;
+  left: 0;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-54 .depth {
+  background: green;
+  height: 10%;
+  top: 84%;
+}
+.btn-54 .depth,
+.btn-54 .shadow {
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.btn-54 .shadow {
+  background: #777;
+  height: 6%;
+  top: 94%;
+}
+.btn-54:hover .content {
+  transform: translateY(4%);
+}
+.btn-54:hover .shadow {
+  transform: translateY(-20%);
+}
+.btn-54:active .content {
+  transform: translateY(8%);
+}
+.btn-54:active .shadow {
+  transform: translateY(-30%);
+}
